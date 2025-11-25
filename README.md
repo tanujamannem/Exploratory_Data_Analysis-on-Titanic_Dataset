@@ -10,8 +10,6 @@ This project performs an **Exploratory Data Analysis (EDA)** on the Titanic data
 
 The Titanic sank on **15 April 1912**, with **2,224 passengers and crew** aboard. This dataset helps us explore patterns and relationships among passengers that affected survival.
 
----
-
 ### Key Objectives 🎯
 1. **Data Exploration and Preparation**
    -  Check for missing values and duplicate records.
@@ -34,7 +32,6 @@ The Titanic sank on **15 April 1912**, with **2,224 passengers and crew** aboard
      -  Port of Embarkation (Embarked)
    - 📊 Use bar plots, count plots, scatter plots, boxplots, and histograms to uncover trends.
 
----
 
 ### Key Insights 💡
 -  Survival rate: ~38% survived, ~62% did not.
@@ -52,7 +49,6 @@ The Titanic sank on **15 April 1912**, with **2,224 passengers and crew** aboard
 -  **Fare:**
   - Higher fare associated with higher-class passengers; fare affects survival probability.
 
----
 
 ### Tools and Libraries 🛠
 -  Python for analysis
