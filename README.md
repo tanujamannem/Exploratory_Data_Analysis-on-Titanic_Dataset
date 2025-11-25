@@ -1,25 +1,61 @@
-# Exploratory_Data_Analysis-on-Titanic_Dataset
+# Exploratory Data Analysis on Titanic Dataset 🚢
 
-Requirements
+### Project Overview 📝
+This project performs an **Exploratory Data Analysis (EDA)** on the Titanic dataset. The dataset contains information about passengers who boarded the Titanic, including:
 
-Python , colab notebook.
-Numpy, Pandas, seaborn and sklearn library.
-Dataset(titanic.txt), added in the repository.
-This dataset has passenger information who boarded the Titanic along with other information like survival status, Class, Fare, and other variables. The unfortunate event which was occurred on 15 April 1912, the Titanic sank after colliding with an iceberg, aboard 2224 peoples.
+-  **Survival status** (whether the passenger survived or not)
+-  **Class** (ticket class)
+-  **Age, Sex, Fare, SibSp, Parch** (family and fare information)
+-  **Embarked** (port of boarding)
 
-This project addresses the following Data Analysis topics:
+The Titanic sank on **15 April 1912**, with **2,224 passengers and crew** aboard. This dataset helps us explore patterns and relationships among passengers that affected survival.
 
-Data Exploration and Preparation
+---
 
-Data Representation and Transformation
+### Key Objectives 🎯
+1. **Data Exploration and Preparation**
+   -  Check for missing values and duplicate records.
+   -  Identify categorical and numerical variables.
+   -  Summarize key statistics: min, max, mean, median, and distributions.
 
-Data Visualization and Presentation
+2. **Data Cleaning and Transformation**
+   -  Drop irrelevant columns such as `Name`, `Ticket`, and `Cabin`.
+   -  Handle missing values in `Age` and `Embarked`.
+   -  Convert columns to proper data types for better analysis (`int`, `category`, etc.).
+   -  Identify passengers with complimentary tickets for further insights.
 
-Data Exploration and Preparation Learn about data: Are there missing data? Is it categorical? if not, min , max, avg values? if yes, what are the categories? distribution of variables Duplicate entry
+3. **Data Visualization**
+   -  Visualize distributions of numerical variables like **Age** and **Fare**.
+   -  Analyze survival patterns with respect to:
+     -  Passenger Class (Pclass)
+     -  Sex
+     -  Age
+     -  Family size (SibSp, Parch)
+     -  Port of Embarkation (Embarked)
+   - 📊 Use bar plots, count plots, scatter plots, boxplots, and histograms to uncover trends.
 
-Data Representation and Transformation Few Passengers didn't pay for the ticket, so there may be a possibility that they didn't purchase a ticket or it was "complimentary" (ticket No. 112050,112059). After checking sample entries, i found out some of the passengers did get a complimentary ticket. This may also help to analyze whom(Important figure in society) to distribute the promotion ticket.
+---
 
-Transformation on dataframe: Droping some of the columns which many not contribute much to our machine learning model such as Name, Ticket, Cabin etc
+### Key Insights 💡
+-  Survival rate: ~38% survived, ~62% did not.
+- **Passenger Class Impact:**
+  - Higher-class passengers had higher survival rates.
+  - Most passengers were from lower class (Pclass 3).
+-  **Gender Impact:**
+  - Females had higher survival rates compared to males.
+-  **Family Impact:**
+  - Passengers traveling alone had lower survival rates than those with family.
+-  **Age Distribution:**
+  - Upper-class median age: 36 years
+  - Middle-class median age: 29 years
+  - Lower-class median age: 26 years
+-  **Fare:**
+  - Higher fare associated with higher-class passengers; fare affects survival probability.
 
-Data Visualization and Presentation Age distribution per class.
-Upper-class passenger median Age - 36 years Middle-class passenger median Age - 29 years Lower- class passenger median Age - 26 years
+---
+
+### Tools and Libraries 🛠
+-  Python for analysis
+-  Pandas & NumPy for data manipulation
+-  Seaborn & Matplotlib for visualization
+-  Scipy.stats for statistical tests
